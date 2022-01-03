@@ -7,6 +7,7 @@ body {
   font-family: Raleway, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.5em;
+  user-select: none;
 }
 
 body {
@@ -44,4 +45,13 @@ button {
 button:hover {
   background: #c23866;
   color: #fff;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: .5em;
+  justify-items: center;
+  margin: 1.25em;
 }
