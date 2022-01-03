@@ -17,8 +17,7 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: lightgray;
 }
 
 * {
@@ -53,5 +52,5 @@ button:hover {
   grid-template-rows: repeat(3, 1fr);
   gap: .5em;
   justify-items: center;
-  margin: 1.25em;
+  margin: 1.5em .5em;
 }

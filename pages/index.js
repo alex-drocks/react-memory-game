@@ -3,12 +3,12 @@ import {nanoid} from 'nanoid'
 import Card from "../components/Card";
 
 const cardImages = [
-  {"src": "/img/helmet-1.png", matched: false},
-  {"src": "/img/potion-1.png", matched: false},
-  {"src": "/img/ring-1.png", matched: false},
-  {"src": "/img/scroll-1.png", matched: false},
-  {"src": "/img/shield-1.png", matched: false},
-  {"src": "/img/sword-1.png", matched: false},
+  {"src": "/images/helmet-1.png", matched: false},
+  {"src": "/images/potion-1.png", matched: false},
+  {"src": "/images/ring-1.png", matched: false},
+  {"src": "/images/scroll-1.png", matched: false},
+  {"src": "/images/shield-1.png", matched: false},
+  {"src": "/images/sword-1.png", matched: false},
 ]
 
 export default function Index() {
@@ -71,7 +71,6 @@ export default function Index() {
 
   return (<>
       <h1>Magic Match</h1>
-      <button onClick={shuffleCards}>New Game</button>
 
       <div className="card-grid">
         {
@@ -87,10 +86,17 @@ export default function Index() {
         }
       </div>
 
-      <br/>
       <p>
         Turns: {turns}
       </p>
+
+      <button onClick={shuffleCards}>New Game</button>
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <a href="https://github.com/alex-drocks/react-memory-game">See Source Code on Github</a>
     </>
   )
 }
